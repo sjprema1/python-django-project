@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %} upload form {%endblock %}
+
+{% block content %}
+<h1>upload a file</h1>
+{% load crispy_forms_tags %}
+<style>
+.box {
+
+  width: 200px;
+  height: 90px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+</style>
+<div class="box">
+<form method="POST" action="{% url 'upload'%}" enctype ="multipart/form-data" style="margin:10px;">
+    {% csrf_token%}
+    {{form|crispy}}
+</form>
+</div>
+{%endblock%}

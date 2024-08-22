@@ -1,0 +1,12 @@
+
+{% extends 'base.html' %}
+ <title>{% block title %}Home{% endblock %}</title>
+  {% block content %}
+    <h1>Home page</h1>
+    <ol>
+    {% for i in person %}
+         <li>name of persons {{i.name}}<li>
+
+    {% endfor %}
+    </ol>
+  {% endblock %}
