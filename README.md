@@ -14,5 +14,10 @@ install Python 3.7
     python manage.py migrate
 ##here we have three apps
 1.register: here we have code user register, login, and logout using django 
-2.python_code : this app contain all practiced python codes.
-3.accuknox : this app contain api urls to create a user and upload the file.
+    * **TO register** - http://127.0.0.1:8000/register/
+    * **api curl for search user** - curl --location 'http://127.0.0.1:8000/search_users?user_name=premasj007@gmail.com&page=1'
+2.python_code : this app contain all practiced python codes and oops concept.
+3.accuknox : this app contain api urls to create a Person with name and age and upload the file.
+ * **TO LOgin**  - http://127.0.0.1:8000/login/
+ * **To Upload** - http://127.0.0.1:8000/upload/
+ * **TO Create Person** - http://127.0.0.1:8000/create/ 
