@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 class AccukonxConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'accukonx'
+    name = 'accuknox'
